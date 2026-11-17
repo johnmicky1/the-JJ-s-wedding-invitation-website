@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The JJ's — John Michael Oliba &amp; Jane Namubiru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HERO SECTION -->
+  <header class="hero" id="top">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <!-- Top Bar -->
+      <nav class="top-nav">
+        <a href="#top" class="monogram-badge" aria-label="The JJ's Home">
+          <span class="monogram-text">The JJ's</span>
+        </a>
+        <div class="nav-pills">
+          <a href="#details" class="nav-pill">Details</a>
+          <a href="#card" class="nav-pill">Card</a>
+          <a href="#rsvp" class="nav-pill">RSVP</a>
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <p class="hero-script-title">Wedding Church Service</p>
+        <p class="hero-greeting">Dear <span id="guest-name-hero">Guest</span>, you are warmly invited to celebrate</p>
+
+        <h1 class="couple-names">
+          John Michael Oliba
+          <span class="ampersand">&amp;</span>
+          Jane Namubiru
+        </h1>
+
+        <p class="event-date">Saturday, 29th August 2026</p>
+        <p class="event-tagline">Love, faith &amp; a promise of forever</p>
+
+        <!-- Countdown Row -->
+        <div class="countdown-grid" role="timer" aria-label="Countdown to wedding">
+          <div class="countdown-card">
+            <span class="countdown-value" id="cd-days">0</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-value" id="cd-hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-value" id="cd-minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-value" id="cd-seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+
+        <!-- Hero CTA Buttons -->
+        <div class="hero-actions">
+          <a href="#details" class="btn btn-primary">View details</a>
+          <a href="#rsvp" class="btn btn-glass">RSVP on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRODUCTORY INVITATION BAND -->
+  <section class="intro-band">
+    <div class="container intro-inner">
+      <p class="eyebrow center">TOGETHER WITH THEIR FAMILIES</p>
+      <h2 class="intro-heading">The honour of your<br />presence is requested</h2>
+      <p class="intro-copy">
+        John Michael Oliba and Jane Namubiru joyfully invite <strong id="guest-name-intro">Guest</strong> to share in their wedding day, surrounded by family, friends, and thanksgiving.
+      </p>
+    </div>
+  </section>
+
+  <!-- WEDDING DAY DETAILS -->
+  <section class="details-section" id="details">
+    <div class="container">
+      <p class="eyebrow">WEDDING DAY</p>
+      <h2 class="section-title">Church Service and reception</h2>
+
+      <div class="venues-grid">
+        <!-- Church Card -->
+        <article class="venue-card">
+          <p class="eyebrow">CHURCH SERVICE</p>
+          <h3 class="venue-name">Watoto Church Bweyogerere</h3>
+          <p class="venue-time">1:00pm</p>
+          <p class="venue-meta">Saturday, 29th August 2026</p>
+          <a href="https://maps.google.com/?q=Watoto+Church+Bweyogerere" target="_blank" rel="noopener noreferrer" class="map-link">Open church map</a>
+        </article>
+
+        <!-- Reception Card -->
+        <article class="venue-card venue-card-warm">
+          <p class="eyebrow">RECEPTION</p>
+          <h3 class="venue-name">PDN opposite Watoto Bweyogerere</h3>
+          <p class="venue-time">3:00pm</p>
+          <p class="venue-meta">Celebration, meal, and fellowship after the Church Service.</p>
+          <a href="https://maps.google.com/?q=PDN+Bweyogerere+opposite+Watoto+Church" target="_blank" rel="noopener noreferrer" class="map-link">Open reception map</a>
+        </article>
+      </div>
+
+      <div class="calendar-actions">
+        <button type="button" id="download-ics" class="btn btn-primary">Add to Calendar</button>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+of+John+Michael+Oliba+%26+Jane+Namubiru&dates=20260829T100000Z/20260829T170000Z&details=Church+Service+at+Watoto+Church+Bweyogerere+(1:00pm)+followed+by+Reception+at+PDN+opposite+Watoto+Bweyogerere+(3:00pm).&location=Watoto+Church+Bweyogerere,+Kampala,+Uganda" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Google Calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVITATION CARD SHOWCASE -->
+  <section class="card-section" id="card">
+    <div class="container card-split">
+      <div class="card-label-col">
+        <span class="card-side-label">INVITATION CARD</span>
+      </div>
+
+      <div class="card-display-col">
+        <div class="formal-card" id="formal-card" role="button" tabindex="0" title="Click to enlarge invitation card">
+          <!-- Decorative Corner Florals & Rings SVG -->
+          <svg class="floral-corner floral-tl" viewBox="0 0 220 220" aria-hidden="true">
+            <defs>
+              <radialGradient id="roseOrange" cx="40%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#f3722c" />
+                <stop offset="65%" stop-color="#c83e12" />
+                <stop offset="100%" stop-color="#7a1c08" />
+              </radialGradient>
+              <radialGradient id="roseCream" cx="40%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#fffdf8" />
+                <stop offset="70%" stop-color="#f5e3c3" />
+                <stop offset="100%" stop-color="#d4b37f" />
+              </radialGradient>
+            </defs>
+            <g fill="#2d4c2b" opacity="0.88">
+              <ellipse cx="32" cy="145" rx="18" ry="7" transform="rotate(-35 32 145)" />
+              <ellipse cx="26" cy="115" rx="22" ry="8" transform="rotate(-15 26 115)" />
+              <ellipse cx="115" cy="24" rx="22" ry="8" transform="rotate(15 115 24)" />
+              <ellipse cx="148" cy="30" rx="18" ry="7" transform="rotate(30 148 30)" />
+              <ellipse cx="78" cy="84" rx="24" ry="9" transform="rotate(42 78 84)" />
+            </g>
+            <circle cx="54" cy="54" r="34" fill="url(#roseOrange)" />
+            <circle cx="54" cy="54" r="22" fill="none" stroke="#ff9f68" stroke-width="2" stroke-dasharray="10 5" />
+            <circle cx="54" cy="54" r="11" fill="none" stroke="#ffd2b3" stroke-width="2" />
+            <circle cx="96" cy="46" r="22" fill="url(#roseCream)" />
+            <circle cx="96" cy="46" r="11" fill="none" stroke="#c9a468" stroke-width="1.5" />
+            <circle cx="48" cy="96" r="23" fill="url(#roseCream)" />
+            <circle cx="48" cy="96" r="12" fill="none" stroke="#c9a468" stroke-width="1.5" />
+            <circle cx="24" cy="32" r="13" fill="#e85d04" />
+            <circle cx="84" cy="22" r="11" fill="#f48c06" />
+            <circle cx="22" cy="82" r="12" fill="#f48c06" />
+          </svg>
+
+          <svg class="floral-corner floral-br" viewBox="0 0 220 220" aria-hidden="true">
+            <g fill="#2d4c2b" opacity="0.88">
+              <ellipse cx="188" cy="75" rx="18" ry="7" transform="rotate(-35 188 75)" />
+              <ellipse cx="194" cy="105" rx="22" ry="8" transform="rotate(-15 194 105)" />
+              <ellipse cx="105" cy="196" rx="22" ry="8" transform="rotate(15 105 196)" />
+              <ellipse cx="72" cy="190" rx="18" ry="7" transform="rotate(30 72 190)" />
+              <ellipse cx="142" cy="136" rx="24" ry="9" transform="rotate(42 142 136)" />
+            </g>
+            <circle cx="166" cy="166" r="34" fill="url(#roseOrange)" />
+            <circle cx="166" cy="166" r="22" fill="none" stroke="#ff9f68" stroke-width="2" stroke-dasharray="10 5" />
+            <circle cx="124" cy="174" r="22" fill="url(#roseCream)" />
+            <circle cx="172" cy="124" r="23" fill="url(#roseCream)" />
+            <circle cx="196" cy="188" r="13" fill="#e85d04" />
+            <circle cx="136" cy="198" r="11" fill="#f48c06" />
+          </svg>
+
+          <!-- Interlocking Gold Rings -->
+          <svg class="rings-icon rings-tr" viewBox="0 0 110 75" aria-hidden="true">
+            <circle cx="40" cy="38" r="23" fill="none" stroke="#c59428" stroke-width="5.5" />
+            <circle cx="40" cy="38" r="23" fill="none" stroke="#f6dd84" stroke-width="2" />
+            <circle cx="68" cy="42" r="23" fill="none" stroke="#b3821c" stroke-width="5.5" />
+            <circle cx="68" cy="42" r="23" fill="none" stroke="#fae494" stroke-width="2" />
+          </svg>
+
+          <svg class="rings-icon rings-bl" viewBox="0 0 110 75" aria-hidden="true">
+            <circle cx="40" cy="38" r="23" fill="none" stroke="#c59428" stroke-width="5.5" />
+            <circle cx="40" cy="38" r="23" fill="none" stroke="#f6dd84" stroke-width="2" />
+            <circle cx="68" cy="42" r="23" fill="none" stroke="#b3821c" stroke-width="5.5" />
+            <circle cx="68" cy="42" r="23" fill="none" stroke="#fae494" stroke-width="2" />
+          </svg>
+
+          <div class="formal-card-body">
+            <h3 class="card-script-header">Wedding Invitation</h3>
+            <p class="card-text">
+              The family of the Late Mr. and Mrs. Oliba Kad of Omagara Village,<br />
+              Kateta Sub - county, Serere District,<br />
+              Together with the family of Omulongo Kato Nsubuga Badru of<br />
+              Bakijjulula Parish, Kyamulibwa Sub - county, Kalungu District and<br />
+              the Late Dorothy Namakula of Nakaseeta Village, Mukono District,<br />
+              with great pleasure cordially invite the company of
+            </p>
+
+            <div class="card-dotted-divider"></div>
+
+            <p class="card-text small-italic">to the wedding ceremony of their beloved children</p>
+            <p class="card-couple">
+              John Michael Oliba<br />
+              <span>&amp;</span><br />
+              Jane Namubiru
+            </p>
+
+            <p class="card-text">
+              To Take Place On Saturday <span class="highlight-red">29th</span> August <span class="highlight-red">2026</span> at Watoto Church<br />
+              Bweyogerere at <span class="highlight-red">1:00pm</span><br />
+              Reception : At PDN OPPOSITE WATOTO Bweyogerere at <span class="highlight-red">3:00pm</span>
+            </p>
+
+            <p class="card-text closing-verse">
+              We would be honoured with your presence<br />
+              as we celebrate love, faith &amp; a promise of forever
+            </p>
+
+            <div class="card-rsvp-header">
+              <span></span>
+              <strong>RSVP</strong>
+              <span></span>
+            </div>
+
+            <div class="card-rsvp-contacts">
+              <div>
+                <strong>Ogara Collin</strong>
+                <span>0772 559364 / 0702 559364</span>
+              </div>
+              <div>
+                <strong>Glenn Jonathan Ekalu</strong>
+                <span>0772 965252</span>
+              </div>
+              <div>
+                <strong>Stella Ruth Apeduno</strong>
+                <span>0779 460 547</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP SECTION -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="container">
+      <p class="eyebrow">RSVP</p>
+      <h2 class="section-title">Please confirm your attendance</h2>
+      <p class="rsvp-subtitle">Your WhatsApp message will include your invited name when opened from a personalized link.</p>
+
+      <div class="rsvp-grid">
+        <article class="rsvp-card">
+          <h3 class="rsvp-name">Ogara Collin</h3>
+          <p class="rsvp-phone">0772 559364 / 0702 559364</p>
+          <a href="#" class="btn btn-primary btn-full whatsapp-rsvp" data-phone="256772559364" data-contact="Ogara Collin">WhatsApp RSVP</a>
+        </article>
+
+        <article class="rsvp-card">
+          <h3 class="rsvp-name">Glenn Jonathan Ekalu</h3>
+          <p class="rsvp-phone">0772 965252</p>
+          <a href="#" class="btn btn-primary btn-full whatsapp-rsvp" data-phone="256772965252" data-contact="Glenn Jonathan Ekalu">WhatsApp RSVP</a>
+        </article>
+
+        <article class="rsvp-card">
+          <h3 class="rsvp-name">Stella Ruth Apeduno</h3>
+          <p class="rsvp-phone">0779 460 547</p>
+          <a href="#" class="btn btn-primary btn-full whatsapp-rsvp" data-phone="256779460547" data-contact="Stella Ruth Apeduno">WhatsApp RSVP</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-names">John Michael Oliba &amp; Jane Namubiru</p>
+      <div class="footer-links">
+        <button type="button" id="open-personalizer" class="footer-link-btn">Personalize invite link</button>
+        <a href="#top" class="footer-link">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL FOR INVITATION CARD -->
+  <div class="modal-backdrop" id="card-modal" hidden>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-label="Invitation Card Preview">
+      <button type="button" class="modal-close" id="close-card-modal" aria-label="Close preview">&times;</button>
+      <div id="modal-card-clone"></div>
+    </div>
+  </div>
+
+  <!-- PERSONALIZED LINK GENERATOR MODAL -->
+  <div class="modal-backdrop" id="link-modal" hidden>
+    <div class="modal-dialog link-dialog" role="dialog" aria-modal="true" aria-label="Create Personalized Guest Link">
+      <button type="button" class="modal-close" id="close-link-modal" aria-label="Close">&times;</button>
+      <p class="eyebrow">GUEST LINK GENERATOR</p>
+      <h3 class="modal-heading">Personalize Invitation</h3>
+      <p class="modal-desc">Enter a guest's name to generate a custom link that greets them by name and pre-fills their WhatsApp RSVP.</p>
+      <input type="text" id="guest-input" class="text-input" placeholder="e.g., Mr. Aloysius Tumwekwase Gonzaga" />
+      <div class="link-output-row">
+        <input type="text" id="generated-url" class="text-input readonly" readonly />
+        <button type="button" id="copy-url-btn" class="btn btn-primary">Copy Link</button>
+      </div>
+      <p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
